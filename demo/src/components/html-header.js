@@ -2,7 +2,7 @@ import React from 'react';
 
 const header = () => {
   return (
-    <h3>Header</h3>
+    <h3>Dropdown Trigger</h3>
   )
 };
 

@@ -25,7 +25,7 @@ export default class AccordionPanel extends Component {
     return(
       <div>
         <AcorrdionHeader content={this.props.header} headerClick={this.handleAccordionHeaderClick} isExpanded={this.state.checked} />
-        <AccordionContent content={this.props.content} isExpanded={this.state.checked} contentID={this.props.accordionId}/>
+        <AccordionContent content={this.props.content} isExpanded={this.state.checked}/>
       </div>
     )
   }

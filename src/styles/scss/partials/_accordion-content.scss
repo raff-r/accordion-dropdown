@@ -2,9 +2,14 @@
 
     display: block;
 
-    height: 0;
-    transition: $speed height ease-in-out;;
+    max-height: 0;
+    transition: $speed max-height cubic-bezier(0, 1, 0, 1);
     overflow: hidden;
+
+    &.opened {
+        max-height: 5000px;
+        transition: max-height 5s ease-out;
+    }
 
 }
 
