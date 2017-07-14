@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import loremIpsum from 'lorem-ipsum';
+import renderHTML from 'react-render-html';
 
 export default class Content extends Component {
 
@@ -10,8 +11,7 @@ export default class Content extends Component {
   render() {
     return (
       <div>
-        <h1>Body Content</h1>
-        {loremIpsum({count: Math.floor(Math.random() * 75) + 1  })}
+        {renderHTML(loremIpsum({count: Math.floor(Math.random() * 5) + 1, units: 'paragraphs', format: 'html'}))}
       </div>
     )
   }

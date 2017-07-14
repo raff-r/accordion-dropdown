@@ -16,15 +16,14 @@ export default class AccordionPanel extends Component {
   }
 
   handleAccordionHeaderClick() {
-    console.log(`clicked ${this.props.accordionId}`);
     this.setState({checked: !this.state.checked});
   }
 
   render() {
 
     return(
-      <div>
-        <AcorrdionHeader content={this.props.header} headerClick={this.handleAccordionHeaderClick} isExpanded={this.state.checked} />
+      <div className={`${(this.state.checked) ? 'opened' : ''}`} id={this.props.accordionId}>
+        <AcorrdionHeader content={this.props.header} headerClick={this.handleAccordionHeaderClick} arrow={this.props.arrow} />
         <AccordionContent content={this.props.content} isExpanded={this.state.checked}/>
       </div>
     )

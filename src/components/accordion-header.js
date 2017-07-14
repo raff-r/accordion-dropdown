@@ -6,9 +6,10 @@ import Utils from '../utils/utils';
 const AccordionContent = (props) => {
 
   const Content = props.content;
+
   return (
     <div
-      className="accordion__header"
+      className={`accordion__header chevron-${props.arrow}`}
       role="tab"
       aria-expanded={props.isExpanded}
       onClick={props.headerClick}
