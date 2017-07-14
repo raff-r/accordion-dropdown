@@ -1,0 +1,10 @@
+.accordion__content {
+
+    display: block;
+
+    height: 0;
+    transition: $speed height ease-in-out;;
+    overflow: hidden;
+
+}
+
