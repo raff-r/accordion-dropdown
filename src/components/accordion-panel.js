@@ -1,9 +1,17 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 
 import AccordionContent from './accordion-content';
 import AcorrdionHeader from './accordion-header';
 
 export default class AccordionPanel extends Component {
+
+  static propTypes = {
+    header: PropTypes.any.isRequired,
+    content: PropTypes.any.isRequired,
+    accordionID: PropTypes.string.isRequired,
+    arrow: PropTypes.oneOf(['left', 'right', 'none'])
+  };
 
   constructor(props) {
     super(props);
@@ -20,9 +28,8 @@ export default class AccordionPanel extends Component {
   }
 
   render() {
-
     return(
-      <div className={`${(this.state.checked) ? 'opened' : ''}`} id={this.props.accordionId}>
+      <div className={`${(this.state.checked) ? 'opened' : ''}`} id={this.props.accordionID}>
         <AcorrdionHeader content={this.props.header} headerClick={this.handleAccordionHeaderClick} arrow={this.props.arrow} />
         <AccordionContent content={this.props.content} isExpanded={this.state.checked}/>
       </div>
