@@ -1,5 +1,57 @@
 .accordion__header {
+
+    position: relative;
+
     &:hover {
         cursor: pointer;
+    }
+
+    &:before {
+
+        position: absolute;
+        top: 50%;
+
+        display: block;
+        height: 9px;
+        width: 9px;
+        margin-top: -7px;
+
+        border-style: solid;
+        border-width: 0.2em 0.2em 0 0;
+
+        vertical-align: top;
+        transform: rotate(135deg);
+        transition: transform 0.3s ease-out;
+        content: '';
+
+    }
+
+    &.chevron-left {
+        padding-left: 20px;
+
+        &:before {
+            left: 0;
+        }
+    }
+
+    &.chevron-right {
+        padding-right: 20px;
+
+        &:before {
+            right: 0;
+        }
+    }
+
+    &.chevron-none {
+        &:before {
+            display: none;
+        }
+    }
+
+}
+
+.opened .accordion__header {
+    &:before {
+        transform: rotate(-45deg);
     }
 }

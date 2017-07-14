@@ -54,6 +54,7 @@
     ]
   },
   "dependencies": {
+    "prop-types": "^15.5.10",
     "react-render-html": "^0.4.1"
   }
 }

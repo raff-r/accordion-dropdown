@@ -16,7 +16,7 @@ export default class AccordionContent extends Component{
 
     return (
       <div
-        className={`accordion__content ${(isExpanded) ? 'opened' : ''}`}
+        className="accordion__content"
         role="tabpanel"
         aria-hidden={!isExpanded}
       >
