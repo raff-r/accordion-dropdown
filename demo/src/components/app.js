@@ -15,7 +15,11 @@ export default class App extends Component {
         <div className="col s12">
           <Accordion>
             <AccordionPanel header={Header} content={Content} accordionId="testing"/>
-
+            <AccordionPanel header={Header} content={Content} accordionId="testing2"/>
+            <AccordionPanel header={Header} content={Content} accordionId="testing3"/>
+            <AccordionPanel header={Header} content={Content} accordionId="testing4"/>
+            <AccordionPanel header={Header} content={Content} accordionId="testing5"/>
+            <AccordionPanel header={Header} content={Content} accordionId="testing6"/>
           </Accordion>
         </div>
       </div>
