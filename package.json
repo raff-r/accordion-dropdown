@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "jest": "^20.0.4",
+    "lorem-ipsum": "^1.0.4",
     "node-sass-chokidar": "0.0.3",
     "npm-run-all": "^4.0.2",
     "nwb": "0.18.x",
@@ -45,9 +46,14 @@
     "transform": {
       "^.+\\.js$": "<rootDir>/jest.transform.js"
     },
-    "collectCoverageFrom": ["src/**/*.js"],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
     "modulePathIgnorePatterns": [
       "<rootDir>[/\\\\](build|demo|node_modules|lib|es)[/\\\\]"
     ]
+  },
+  "dependencies": {
+    "react-render-html": "^0.4.1"
   }
 }
