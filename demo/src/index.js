@@ -1,15 +1,6 @@
-import React, {Component} from 'react'
-import {render} from 'react-dom'
+import React from 'react'
+import {render} from 'react-dom';
 
-import Example from '../../src'
+import App from './components/app';
 
-class Demo extends Component {
-  render() {
-    return <div>
-      <h1>my-component Demo</h1>
-      <Example/>
-    </div>
-  }
-}
-
-render(<Demo/>, document.querySelector('#demo'))
+render(<App/>, document.querySelector('#root'));
