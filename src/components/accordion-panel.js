@@ -8,9 +8,7 @@ export default class AccordionPanel extends Component {
 
   static propTypes = {
     header: PropTypes.any.isRequired,
-    content: PropTypes.any.isRequired,
-    accordionID: PropTypes.string.isRequired,
-    arrow: PropTypes.oneOf(['left', 'right', 'none'])
+    content: PropTypes.any.isRequired
   };
 
   constructor(props) {
@@ -29,7 +27,7 @@ export default class AccordionPanel extends Component {
 
   render() {
     return(
-      <div className={`${(this.state.checked) ? 'opened' : ''}`} id={this.props.accordionID}>
+      <div className={`${(this.state.checked) ? 'opened' : ''}`} id={this.props.id}>
         <AcorrdionHeader content={this.props.header} headerClick={this.handleAccordionHeaderClick} arrow={this.props.arrow} />
         <AccordionContent content={this.props.content} isExpanded={this.state.checked}/>
       </div>

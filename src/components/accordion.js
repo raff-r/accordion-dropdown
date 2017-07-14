@@ -3,11 +3,9 @@ import PropTypes from 'prop-types';
 
 const Accordion = (props) => {
 
-  console.log(props.accordionId);
-
   const childrenWithProps = props.children.map( (child, index) => {
     return React.cloneElement(child, {
-      accordionID: props.accordionId,
+      id: props.accordionId,
       arrow: props.arrow,
       key: `${props.accordionId}_panel_${index}`
     });
