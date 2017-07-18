@@ -13496,7 +13496,11 @@ var header = function header() {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
     'p',
     null,
-    'Dropdown Trigger'
+    __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
+      'strong',
+      null,
+      'Dropdown Trigger'
+    )
   );
 };
 
@@ -30160,7 +30164,7 @@ var App = function (_Component) {
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement('hr', null),
         __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(
           __WEBPACK_IMPORTED_MODULE_1__src_components_accordion__["a" /* default */],
-          { accordionId: 'demo3' },
+          { accordionId: 'demo3', arrow: 'none' },
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__src_components_accordion_panel__["a" /* default */], { header: __WEBPACK_IMPORTED_MODULE_5__html_header__["a" /* default */], content: __WEBPACK_IMPORTED_MODULE_4__accordion_content__["a" /* default */] }),
           __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__src_components_accordion_panel__["a" /* default */], { header: __WEBPACK_IMPORTED_MODULE_5__html_header__["a" /* default */], content: __WEBPACK_IMPORTED_MODULE_4__accordion_content__["a" /* default */] })
         )
@@ -38143,4 +38147,4 @@ module.exports = DOMPropertyOperations;
 /***/ })
 
 },[0]);
-//# sourceMappingURL=demo.80ec1c81.js.map
+//# sourceMappingURL=demo.f584b1ca.js.map
