@@ -1,8 +1,6 @@
 import React, {Component} from 'react'
 
-import Accordion from '../../../src/components/accordion';
-import AccordionPanel from '../../../src/components/accordion-panel';
-import '../../../src/styles/mse-accordon.css';
+import {Accordion, AccordionPanel, styles} from '../../../src/index';
 
 import Content from './accordion-content';
 import Header from './html-header';
