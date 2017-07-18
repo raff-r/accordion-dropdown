@@ -1,14 +1,15 @@
 .accordion__content {
 
-    display: block;
-
     max-height: 0;
-    transition: $speed max-height ease-out;
+    transition: $speed all cubic-bezier(0, 1, 0, 1);
     overflow: hidden;
+    visibility: hidden;
 
 }
 
 .opened .accordion__content {
     max-height: 1000px;
+    visibility: visible;
+    transition: $speed all ease-in-out;
 }
 
