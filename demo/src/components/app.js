@@ -40,7 +40,7 @@ export default class App extends Component {
 
           <h5>No arrows</h5>
           <hr/>
-          <Accordion accordionId="demo3">
+          <Accordion accordionId="demo3" arrow="none">
             <AccordionPanel header={Header} content={Content}/>
             <AccordionPanel header={Header} content={Content}/>
           </Accordion>
