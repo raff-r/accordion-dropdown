@@ -1,5 +1,5 @@
 {
-  "name": "react-accordion",
+  "name": "react-accordion-dropdown",
   "version": "1.0.0",
   "description": "A react accordion component which allows a single or multiple accordions to be open",
   "main": "lib/index.js",
