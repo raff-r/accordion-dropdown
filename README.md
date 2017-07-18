@@ -7,12 +7,12 @@
 
 ##### 1. Installation
 
-`npm install --save react-accordion`
+`npm install --save react-accordion-dropdown`
 
 ##### 2. Import `Accordion` and `AccordionPanel` and styles to your component.
 
 ```
-import {Accordion, AccordionPanel, styles} from 'react-accordion';
+import {Accordion, AccordionPanel, styles} from 'react-accordion-dropdown';
 ```
 
 
